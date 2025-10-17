@@ -91,15 +91,15 @@ class App extends React.Component {
         <div className="container mt-2">
           <div className="row">
             <div className="col-12">
-              <Cat tamanho="2"/>
-              <Cat tamanho="2" direcao="horizontal"/>
+              <Cat tamanho="3"/>
+              <Cat tamanho="3" direcao="horizontal"/>
             </div>    
           </div>
           <div className="row">
             <div className="col-12">
               {
                 (!this.state.latitude && !this.state.mensagemDeErro) ?
-                  <Loading />
+                  <Loading texto='Por favor, libere o acesso a sua localização.'/>
                 :
                 this.state.mensagemDeErro ?
                 <p className="border rounded p-2 fs-1 text-center">
